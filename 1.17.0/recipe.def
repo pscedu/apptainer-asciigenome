@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: quay.io/biocontainers/asciigenome:1.17.0--hdfd78af_0
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    SUPPORT help@psc.edu
+    REPOSITORY http://gitub.com/pscedu/apptainer-asciigenome
+    COPYRIGHT Copyright © 2021-2024 Pittsburgh Supercomputing Center. All Rights Reserved.    
+    VERSION 1.17.0
+
+%runscript
+    ASCIIGenome "$@"
